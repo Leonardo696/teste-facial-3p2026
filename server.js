@@ -13,6 +13,8 @@ app.use(cors());
 
 app.use(express.static("public"));
 
+app.use('/models', express.static('models')); 
+
 
 const storage = multer.diskStorage({
 
